@@ -1,0 +1,33 @@
+<h4 style="text-align: center;">UsersList</h4>
+<div class="mb-4" style="text-align: end;">
+<button type="button" class="btn btn-info">Add User</button>
+</div>
+<table class="table">
+    <thead class="thead-dark">
+      <tr>
+        <th>Id</th>
+        <th>FirstName</th>
+        <th>LastName</th>
+        <th>Password</th>
+        <th>Email</th>
+        <th>Phone</th>
+        <th>Action</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <tr *ngFor="let data of userdata">
+            <td>{{data.id}}</td>
+            <td>{{data.firstname}}</td>
+            <td>{{data.lastname}}</td>
+            <td>{{data.password}}</td>
+            <td>{{data.email}}</td>
+            <td>{{data.mobileno}}</td>
+            <td><i (click)="DeleteUser(data.id)" class="fa fa-trash" style="font-size:30px;color:red;cursor: pointer;"></i>
+                <i routerLink="/signup/{{data.id}}" class="fa fa-pencil ml-1" style="font-size:30px;color:rgb(21, 119, 184);cursor: pointer;"></i></td>
+            
+        </tr>
+     </tbody>
+  </table>
+
+ 

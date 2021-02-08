@@ -1,0 +1,24 @@
+<nav class="alert show alert-info fade">
+    <ul class="nav-pills nav">
+        <li class="nav-item ml-auto">
+            <a [routerLink]="['/home']" routerLinkActive="router-link-active"   routerLinkActive="active-link"  role="tab" aria-selected="false" aria-disabled="false" class="nav-link ml-auto">Home</a>
+        </li>
+        <li class="nav-item ">
+            <a [routerLink]="['/about']" routerLinkActive="router-link-active"   routerLinkActive="active-link"  role="tab" aria-selected="true" aria-disabled="false" class="nav-link ">AboutUs</a><!---->
+        </li>
+        <li class="nav-item ">
+            <a [routerLink]="['/contactus']" routerLinkActive="router-link-active"   routerLinkActive="active-link"  role="tab" aria-selected="true" aria-disabled="false" class="nav-link ">ContactUs</a><!---->
+        </li>
+        <li class="nav-item ">
+            <a [routerLink]="['/signup']" routerLinkActive="router-link-active"   routerLinkActive="active-link"  role="tab" aria-selected="true" aria-disabled="false" class="nav-link ">SignUp</a><!---->
+        </li>
+        <li class="nav-item ">
+            <a [routerLink]="['/login']" routerLinkActive="router-link-active"   routerLinkActive="active-link" role="tab" aria-selected="true" aria-disabled="false" class="nav-link ">Login</a><!---->
+        </li>
+        <li class="nav-item ">
+            <a [routerLink]="['/users']" routerLinkActive="router-link-active"   routerLinkActive="active-link" role="tab" aria-selected="true" aria-disabled="false" class="nav-link ">Users</a><!---->
+        </li>
+    </ul>
+</nav>
+<!-- <app-signup>Singup</app-signup> -->
+<router-outlet></router-outlet>

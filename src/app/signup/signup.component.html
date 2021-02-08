@@ -1,0 +1,71 @@
+
+ <div *ngIf="alertmsg" class="alert alert-success" >
+    <strong>Success!</strong> Data Saved Successfully!..
+  </div>
+    <form [formGroup]="signupform" (ngSubmit)="submitSignup()">
+
+<div style="text-align: -webkit-center">
+    <h4 class="register-heading">Register</h4>
+   
+   <div class="col-md-6">
+            <div class="form-group">
+                <input type="text"  class="form-control"  formControlName="firstname"  placeholder="First Name *"/>
+                <span style="color: red;" *ngIf="firstname.invalid && (submitted  ||  firstname.touched)">Firstname is required!</span>
+            </div>
+            <div class="form-group">
+                <input type="text" class="form-control" formControlName="lastname" placeholder="Last Name *"/>
+                <span style="color: red;" *ngIf="lastname.invalid && (submitted  || lastname.touched)">Lastname is required!</span>
+
+            </div>
+            <div class="form-group">
+                <input type="password" class="form-control" formControlName="password" placeholder="Password *"/>
+                <span style="color: red;" *ngIf="password.invalid && (submitted  || password.touched)">Password is required!</span>
+            </div>
+            <!-- <div class="form-group">
+                <input type="password" class="form-control" formControlName="confirmpassword"  placeholder="Confirm Password *"/>
+                <span style="color: red;" *ngIf="confirmpassword.invalid && (submitted  || confirmpassword.touched)">Confirmpassword is required!</span>
+
+            </div> -->
+            <!-- <div class="form-group">
+                <div class="maxl">
+                    <label class="radio inline"> 
+                        <input type="radio" formControlName="gender"  value="male" checked>
+              <span> Male </span> &nbsp;
+             </label>
+                    <label class="radio inline"> 
+                        <input type="radio" formControlName="gender" value="female">
+              <span>Female </span> 
+             </label>
+                </div>
+            </div> -->
+        </div>
+        <div class="col-md-6">
+            <div class="form-group">
+                <input type="email" class="form-control" formControlName="email" placeholder="Your Email *"/>
+                <span style="color: red;" *ngIf="email.invalid && (submitted  || email.touched)">email is required!</span>
+            </div>
+            <div class="form-group">
+                <input type="text" minlength="10" maxlength="10" formControlName="mobileno" class="form-control" placeholder="Your Phone *"/>
+                <span style="color: red;" *ngIf="mobileno.invalid && (submitted  || mobileno.touched)">mobileno is required!</span>
+
+            </div>
+            <input class="btn btn-info" type="submit" value="Register"/>
+            <!-- <div class="form-group">
+                <select class="form-control" formControlName="question">
+                    <option class="hidden"  selected disabled>Please select your Sequrity Question</option>
+                    <option>What is your Birthdate?</option>
+                    <option>What is Your old Phone Number</option>
+                    <option>What is your Pet Name?</option>
+                </select>
+                <span style="color: red;" *ngIf="question.invalid && (submitted  || question.touched)">Please select any question!</span>
+
+            </div>
+            <div class="form-group">
+                <input type="text" class="form-control" formControlName="queanswer" placeholder="Enter Your Answer *"/>
+                <span style="color: red;" *ngIf="queanswer.invalid && (submitted  || queanswer.touched)">mobileno is required!</span>
+
+            </div> -->
+          
+        </div>
+    </div>
+</form>

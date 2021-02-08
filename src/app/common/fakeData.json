@@ -1,0 +1,28 @@
+{
+  "User": [
+    {
+      "firstname": "Rinku123",
+      "lastname": "Choudhary",
+      "password": "Rinku@123",
+      "email": "Rinku@gmail.com",
+      "mobileno": "1234567890",
+      "id": 1
+    },
+    {
+      "firstname": "Komal123",
+      "lastname": "Modi123",
+      "password": "Komla@123",
+      "email": "Komal@gmail.com",
+      "mobileno": "1234567890",
+      "id": 2
+    },
+    {
+      "firstname": "Amit",
+      "lastname": "Parmar",
+      "password": "Amit@123",
+      "email": "Amit@gmail.com",
+      "mobileno": "1234567890",
+      "id": 3
+    }
+  ]
+}
